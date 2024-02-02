@@ -40,7 +40,7 @@ public class UsersController
 		{
 			System.out.println("User already exist");
 		}
-		return "home";	
+		return "index";	
 	}
 	@PostMapping("/validate")
 	public String validate(@RequestParam("email") String email,@RequestParam("password") String password, HttpSession session,Model model)
