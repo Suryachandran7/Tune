@@ -39,7 +39,7 @@ function createOrder() {
         .done(function(order) {
             order = JSON.parse(order);
             var options = {
-                "key": "rzp_test_oCVS1CEpPI0p9u",
+                "key": "rzp_test_QKqewiRLNb8nW4",
                 "amount": order.amount_due.toString(),
                 "currency": "INR",
                 "name": "Tune Hub",
@@ -49,9 +49,9 @@ function createOrder() {
                     verifyPayment(response.razorpay_order_id, response.razorpay_payment_id, response.razorpay_signature);
                 },
                 "prefill": {
-                    "name": "Surya",
-                    "email": "surya.meslio@gmail.com",
-                    "contact": "7868927511"
+                    "name": "Your Name",
+                    "email": "test@example.com",
+                    "contact": "9999999999"
                 },
                 "notes": {
                     "address": "Your Address"
